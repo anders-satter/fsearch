@@ -22,6 +22,20 @@ public class FileSearchMain {
 	 */
     public static void main(String[] args) throws IOException {
     	
+    	if (args.length < 1){
+    		System.out.println("simple search program");
+    		System.out.println("requires java 1.8 and above");
+    		System.out.println("arguments:");
+    		System.out.println("1: base directory, eg /Users/anders/bin or .");
+    		System.out.println("2: file name pattern regular expression,");
+    		System.out.println("   eg .*js.* for all file names containing js ");
+    		
+    		System.out.println("3: content pattern regular expression,");
+    		System.out.println("   eg .*toString.* ");	
+    		System.out.println();
+    		System.exit(0); 		
+    	}
+    	
     	String fileNamePatternStr = args[1];
     	String contentPatterStr = null;
     	if (args.length > 2){

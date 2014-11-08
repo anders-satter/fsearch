@@ -20,8 +20,9 @@ import java.util.stream.Stream;
  * the path, for sometimes the path gives an indication as to the usage and
  * contents of a file. So this may change in the future.
  * 
- * @author anders
- *
+ * This file was found somewhere on the internet, but has been adjusted by
+ * me. 
+ * 
  */
 class SearchFileVisitor implements FileVisitor<Path> {
 
