@@ -42,6 +42,7 @@ public class FileSearchMain {
     		contentPatterStr = args[2];	
     	}
     	
+    	
     	Pattern fileNamePattern = Pattern.compile(fileNamePatternStr);
     	Pattern contentPattern = null;
     	if (contentPatterStr != null){
@@ -65,8 +66,11 @@ public class FileSearchMain {
     private static void visitRecursively(Path path, 
     		Pattern fileNamePattern, 
     		Pattern fileContentPattern) throws IOException {
+    	/*
+    	 * This is a comment that we  
+    	 */
         SearchFileVisitor visitor = new SearchFileVisitor(fileNamePattern, fileContentPattern);
-        Files.walkFileTree(path, visitor);
         visitor.printSummary();
+        Files.walkFileTree(path, visitor);
     }
 }
