@@ -11,13 +11,13 @@ import java.util.regex.Pattern;
  * Windows since the custom search function cannot
  * under any circumstances be used
  * @author anders
- *
  */
 public class FileSearchMain {
 	
 	/**
 	 * 
 	 * @param args
+	 
 	 * @throws IOException
 	 */
     public static void main(String[] args) throws IOException {
